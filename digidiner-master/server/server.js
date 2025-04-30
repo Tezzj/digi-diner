@@ -40,7 +40,7 @@ pgPool.query('SELECT NOW()', (err, res) => {
 const corsOptions = {
   origin: [
     'http://localhost:5173',
-    'https://digidiner.netlify.app'
+    'https://digidinner.netlify.app'
   ],
   optionsSuccessStatus: 200
 };
@@ -60,7 +60,7 @@ app.use('/api/orders', orderRoutes);
 
 // Simple root route to check if the API is alive
 app.get('/', (req, res) => {
-  res.send('digidiner API is running!');
+  res.send('digidinner API is running!');
 });
 
 // Global error handler to always return JSON
