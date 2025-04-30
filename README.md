@@ -12,8 +12,7 @@ Welcome to digidiner! A full-stack web app I built to offer a smooth online menu
 
 
 ## User Journey
-
-![image](https://github.com/user-attachments/assets/10891003-7c3b-4bd6-9982-fd16c082a79d)           
+           
 ![image](https://github.com/user-attachments/assets/33665e13-04e6-4092-91c1-cc415fe3166b)
 ![Screenshot 2025-04-20 003414](https://github.com/user-attachments/assets/982ffa65-216d-4970-9a0b-d95e2ce3ffae)
 ![image](https://github.com/user-attachments/assets/8f119eb6-0db8-46df-bf6c-6693e321e51d)
