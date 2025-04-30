@@ -4,12 +4,13 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
+  base: '/', // Since it's hosted at the root of your domain (digidiner.netlify.app)
   server: {
     host: "::",
     port: 8080,
     proxy: {
-      '/api': 'http://localhost:5001' // Proxy API requests to the backend (updated to 5001)
-    }
+      '/api': 'http://localhost:5001', // Proxy API requests to the backend (for local dev)
+    },
   },
   plugins: [
     react(),
@@ -18,5 +19,8 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
+  },
+  build: {
+    outDir: 'dist', // Ensure this matches the Netlify publish directory setting
   },
 }));
