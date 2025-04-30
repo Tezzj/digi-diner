@@ -1,6 +1,6 @@
 # digidiner - Food Ordering App
 
-Welcome to digidiner! A full-stack web app I built to offer a smooth online menu and pickup ordering experience. The project uses React (Vite, TypeScript, Tailwind) for the frontend, Node.js/Express for the backend, and leverages both MongoDB and PostgreSQL for data storage.
+A full-stack web app to offer a smooth online menu and pickup ordering experience. The project uses React (Vite, TypeScript, Tailwind) for the frontend, Node.js/Express for the backend, and leverages both MongoDB and PostgreSQL for data storage.
 
 ## Features
 
@@ -28,9 +28,10 @@ Welcome to digidiner! A full-stack web app I built to offer a smooth online menu
   - MongoDB Atlas (menu items)
   - Neon DB PostgreSQL (orders)
 
-## Why Both MongoDB and PostgreSQL?
+## MongoDB and PostgreSQL
 
-I chose MongoDB for menu items because restaurant menus can change a lot—new categories, specials, or item options. MongoDB's flexible schema makes this easy. For orders, I wanted strong data integrity and the ability to do relational queries (like order history by customer), so PostgreSQL was the best fit.
+I chose mongodb for menu items as there can be many types of data which are not related to each other.
+I used postgres for order information, as it can be related with users data and menu items, and it is more structured.
 
 ## How to Run Locally
 
@@ -84,8 +85,8 @@ I chose MongoDB for menu items because restaurant menus can change a lot—new c
 
 ## Deployment
 
-- **Backend:** [https://digidiner-backend.onrender.com](https://digidiner-backend.onrender.com)
-- **Frontend:** [https://digidiner.netlify.app](https://digidiner.netlify.app)
+- **Backend:** [https://digidiner-backend.onrender.com](https://digi-diner.onrender.com/)
+- **Frontend:** [https://digidiner.netlify.app](https://digidinner.netlify.app)
 
 If you deploy your own version, make sure to set the `VITE_API_BASE_URL` in Netlify to your backend's `/api` endpoint, and update CORS in the backend to allow your Netlify domain.
 
@@ -94,7 +95,5 @@ If you deploy your own version, make sure to set the `VITE_API_BASE_URL` in Netl
 - The backend and frontend are deployed separately, so CORS must be set up right.
 - Menu data is seeded using `server/seeder.js`.
 - PostgreSQL tables must exist before running the backend (see `orderRoutes.js` for structure).
-- No authentication—order lookup is by phone/email only.
-- I focused on clean code, clear separation of concerns, and a smooth user experience.
 
 ---
