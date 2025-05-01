@@ -85,8 +85,8 @@ I used postgres for order information, as it can be related with users data and 
 
 ## Deployment
 
-- **Backend:** [https://digidiner-backend.onrender.com](https://digi-diner.onrender.com/)
-- **Frontend:** [https://digidiner.netlify.app](https://digidinner.netlify.app)
+- **Backend:** [https://digi-diner.onrender.com](https://digi-diner.onrender.com/)
+- **Frontend:** [https://digidinner.netlify.app](https://digidinner.netlify.app)
 
 If you deploy your own version, make sure to set the `VITE_API_BASE_URL` in Netlify to your backend's `/api` endpoint, and update CORS in the backend to allow your Netlify domain.
 
